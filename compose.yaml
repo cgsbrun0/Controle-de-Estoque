@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:3000}
+      TRUST_PROXY: ${TRUST_PROXY:-0}
+    volumes:
+      - estoque_data:/app/data
+      - estoque_backups:/app/backups
+    restart: unless-stopped
+volumes:
+  estoque_data:
+  estoque_backups:

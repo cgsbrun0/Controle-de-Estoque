@@ -1,0 +1,1 @@
+{"version":"2.0.0","tasks":[{"label":"Iniciar aplicativo","type":"npm","script":"dev","problemMatcher":[],"isBackground":true},{"label":"Executar testes","type":"npm","script":"test","problemMatcher":[]},{"label":"Preparar publicação","type":"npm","script":"build","problemMatcher":[]}]}

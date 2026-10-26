@@ -1,0 +1,38 @@
+{
+  "name": "controle-estoque",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Controle de estoque com importa\u00e7\u00e3o Excel, hist\u00f3rico e dupla confirma\u00e7\u00e3o.",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "node --watch --import tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "node --import tsx server/index.ts --production",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "usuario:criar": "node --import tsx scripts/create-user.ts",
+    "backup": "node --import tsx scripts/backup.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "exceljs": "4.4.0",
+    "express": "^5.1.0",
+    "lucide-react": "1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "vite": "8.0.13",
+    "@tailwindcss/postcss": "4.2.1"
+  }
+}

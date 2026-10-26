@@ -1,0 +1,4 @@
+# Substitua pelo seu domínio. Caddy deve rodar no mesmo servidor, fora do Compose.
+estoque.seu-dominio.com.br {
+    reverse_proxy 127.0.0.1:3000
+}
