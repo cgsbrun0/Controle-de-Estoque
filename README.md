@@ -120,6 +120,14 @@ O volume `estoque_data` mantém o banco; `estoque_backups` guarda backups. Não 
 Em um servidor com Node.js 24, execute `npm ci`, crie `.env` com o domínio HTTPS, crie os usuários, rode `npm run build` e inicie `npm start` com um gerenciador de processos. Configure proxy HTTPS e uma pasta persistente em `DB_PATH`. Mantenha `HOST=127.0.0.1` quando o proxy estiver no mesmo servidor. Em contêineres ou plataformas que exigirem conexão por outra interface, configure `HOST=0.0.0.0`.
 
 
+
+## 4. Futuro
+Como a intenção não é de colocar o projeto de forma independente nas nuvens, em um primeiro momento vamos apenas liberar os códigos, depois disso, você terão a liberdade de fazer suas modificações, e o que decidirem fazer.. está feito.
+Assim, minha intenção para o futuro é:
+- Colocar o aplicativo nas nuvens;
+- Criar estruta diversa para colocar mais de um estoque rodando por vez;
+- Resolver o problema de coluna, para ela aceitar apenas caracteres ou numeros naturais.
+
 ## Referências técnicas
 
 - Node.js 24 / SQLite: https://nodejs.org/download/release/latest-v24.x/docs/api/sqlite.html
